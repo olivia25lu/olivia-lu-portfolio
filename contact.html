@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Olivia Lu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .contact-page-hero { background:var(--navy-deep); color:var(--cream); padding:150px 0 90px; }
+  .contact-page-hero .page-crumb, .contact-page-hero .page-kicker { color:var(--brass-soft); }
+  .contact-page-hero .page-title { color:var(--cream); }
+  .contact-page-hero .page-title em { color:rgba(246,241,230,.65); }
+  .contact-page-hero .page-eyebrow-row { border-bottom-color:rgba(246,241,230,.14); }
+  .contact-page-hero .page-intro { color:rgba(246,241,230,.65); }
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+  .contact-block h3 { font-size:15px; letter-spacing:.06em; text-transform:uppercase; color:var(--brass); margin-bottom:16px; }
+  .contact-block .big-link { display:block; font-family:var(--ff-display); font-size:26px; color:var(--navy); margin-bottom:14px; }
+  .contact-block .big-link:hover { color:var(--brass); }
+  .avail-list { display:flex; flex-direction:column; gap:10px; margin-top:20px; }
+  .avail-list li { font-size:15px; color:var(--ink-soft); padding-left:18px; position:relative; }
+  .avail-list li::before { content:""; position:absolute; left:0; top:9px; width:6px; height:1px; background:var(--brass); }
+  @media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">OL</a>
+    <nav class="nav" id="nav">
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a class="btn btn-small btn-outline resume-link" href="resume.html">Resume</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero contact-page-hero">
+    <div class="wrap page-hero-inner" style="padding-top:0;">
+      <div class="page-eyebrow-row">
+        <span class="page-kicker">Contact</span>
+        <span class="page-crumb"><a href="index.html">Home</a> / Contact</span>
+      </div>
+      <h1 class="page-title">Open to conversations in <em>finance, research, and technology.</em></h1>
+      
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="wrap contact-grid">
+      <div class="contact-block reveal">
+        <h3>Direct</h3>
+        <a class="big-link" href="mailto:olivia25lu@gmail.com">olivia25lu@gmail.com</a>
+        <a class="big-link" href="https://www.linkedin.com/in/olivialu3/" target="_blank" rel="noopener">linkedin.com/in/olivialu3</a>
+        <a class="big-link" href="tel:+14805694282">(480) 569-4282</a>
+      </div>
+      <div class="contact-block reveal">
+        <h3>Currently</h3>
+        <ul class="avail-list">
+          <li>Incoming freshman, Stanford University, Class of 2030</li>
+          <li>Based in Chandler, Arizona through summer 2026</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap contact-inner">
+      <p class="section-eyebrow light reveal">Say hello</p>
+      <h2 class="contact-title reveal">olivia25lu@gmail.com</h2>
+
+      <div class="contact-links reveal">
+        <a href="mailto:olivia25lu@gmail.com">Send an email &rarr;</a>
+        <a href="resume.html">View resume &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-sitemap">
+  <div class="wrap">
+    <div class="fs-grid">
+      <div><div class="fs-brand">Olivia Lu</div><p class="fs-tag">Economics &amp; Computer Science, Stanford &rsquo;30. Researching, building, and leading at the intersection of finance, technology, and public impact.</p></div>
+      <div><h4>Explore</h4><a href="experience.html">Experience</a><a href="projects.html">Projects</a></div>
+      <div><h4>Depth</h4><a href="research.html">Research</a><a href="leadership.html">Leadership</a><a href="resume.html">Resume</a></div>
+      <div><h4>Connect</h4><a href="mailto:olivia25lu@gmail.com">Email</a><a href="https://www.linkedin.com/in/olivialu3/" target="_blank" rel="noopener">LinkedIn</a><a href="contact.html">Contact page</a></div>
+      <div><h4>Location</h4><span style="display:block;font-size:14px;color:rgba(246,241,230,.75);">Chandler, Arizona</span></div>
+    </div>
+    <div class="fs-bottom"><span>&copy; 2026 Olivia Lu</span></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
